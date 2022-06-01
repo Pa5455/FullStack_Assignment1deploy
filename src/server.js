@@ -44,7 +44,7 @@ const swaggerOptions = {
 
 async function init() {
   const server = Hapi.server({
-    port: process.env.PORT || 3443,
+    port: process.env.PORT || 3000,
     tls: {
       key: fs.readFileSync("keys/private/webserver2.key"),
       cert: fs.readFileSync("keys/webserver2_self.crt")
